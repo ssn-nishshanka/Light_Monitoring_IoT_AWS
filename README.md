@@ -7,13 +7,10 @@ This project demonstrates a complete IoT pipeline for monitoring light exposure.
 
 ## Key Highlights:
 
-Real-time light monitoring with automated data collection.
-
-Cloud integration using AWS IoT Core.
-
-Efficient storage and query with MongoDB Atlas.
-
-Interactive visualization and analysis using Python and Dash.
+- Real-time light monitoring with automated data collection.
+- Cloud integration using AWS IoT Core.
+- Efficient storage and query with MongoDB Atlas.
+- Interactive visualization and analysis using Python and Dash.
 
 
 ## System Architecture
@@ -29,13 +26,10 @@ The system implements an end-to-end real-time IoT light monitoring pipeline. The
 
 ## Components Used:
 
-ESP32 Microcontroller
-
-LM393 Light Sensor
-
-Solderless Breadboard
-
-Jumper Wires
+- ESP32 Microcontroller
+- LM393 Light Sensor
+- Solderless Breadboard
+- Jumper Wires
 
 ## Sensor Pin Connections:
 
@@ -49,15 +43,31 @@ The LM393 sensor provides a binary output based on the comparison between ambien
 
 ## Data Analysis & Visualization
 
-Aggregated and processed data is retrieved using Python scripts.
-Dash dashboard provide interactive visualizations for:
-Real-time light exposure monitoring
-Trend analysis over time intervals
-Binary time series representation of light intensity
-Benefits:
-Enables quick detection of unusual light patterns in the lobby.
-Facilitates decision-making for building lighting management.
+Aggregated and processed IoT light sensor data is retrieved from MongoDB Atlas using Python scripts.
+The system supports two visualization layers:
 
+## Cloud-Based Visualization (MongoDB Atlas Charts)
+
+MongoDB Atlas Charts is used for direct cloud-based visualization of stored IoT data without additional processing.
+
+Features:
+
+Real-time monitoring directly on MongoDB collections
+
+Time-series and aggregation-based charts
+
+Secure, shareable dashboards hosted in the cloud
+
+This layer enables fast exploratory analysis, while the Dash dashboard provides customized and advanced analytics.
+
+Application-Level Visualization (Dash & Plotly):
+- Real-time light exposure monitoring
+- Trend analysis over configurable time intervals
+- Binary time-series representation of light intensity
+- Interactive filtering and time-range selection
+- Benefits:
+- Enables quick detection of unusual or inconsistent light patterns
+Supports data-driven decisions for building lighting management
 ## Technologies Used
 
 Hardware: ESP32, LM393 light sensor, breadboard, jumper wires
@@ -68,7 +78,11 @@ Database: MongoDB Atlas
 
 Programming & Analysis: Python, Pandas, PyMongo
 
-Visualization: Dash, Plotly
+Visualization:
+
+MongoDB Atlas Charts (cloud-level monitoring)
+
+Dash & Plotly (custom interactive dashboards)
 
 ## Setup & Running Instructions
 
