@@ -1,7 +1,6 @@
-# Light Monitoring IoT System
-## Project Overview
+# End-to-end Real-Time IoT Light Monitoring System
 
-## End-to-end Real-Time IoT Light Monitoring System
+## Project Overview
 
 This project demonstrates a complete IoT pipeline for monitoring light exposure. The system uses an ESP32 microcontroller with an LM393 light sensor to collect real-time light data, publishes it to AWS IoT Core via MQTT, stores it in MongoDB Atlas, and uses Python and Dash for aggregation, analysis, and interactive visualization.
 
