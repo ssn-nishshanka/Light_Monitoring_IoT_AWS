@@ -2,14 +2,14 @@
 
 ## Project Overview
 
-This project demonstrates a complete IoT pipeline for monitoring light exposure. The system uses an ESP32 microcontroller with an LM393 light sensor to collect real-time light data, publishes it to AWS IoT Core via MQTT, stores it in MongoDB Atlas, and uses Python, Dash, and MongoDB Atlas Charts for aggregation, analysis, and visualizations.
+This project demonstrates a complete IoT pipeline for monitoring light exposure. The system uses an ESP32 microcontroller with an LM393 light sensor to collect real-time light data, publishes it to AWS IoT Core via MQTT, stores it in MongoDB Atlas, and uses Python, Dash, and MongoDB Atlas Charts for aggregation and visualization..
 
 ## Key Highlights:
 
 - Real-time light monitoring with automated data collection.
 - Cloud integration using AWS IoT Core.
 - Efficient storage and query with MongoDB Atlas.
-- Visualization and analysis using Python, Dash, and MongoDB Atlas Charts.
+- Aggregation and visualization using Python, Dash, and MongoDB Atlas Charts.
 
 
 ## System Architecture
@@ -19,7 +19,7 @@ This project demonstrates a complete IoT pipeline for monitoring light exposure.
 ## Dataflow
 
 <img width="1262" height="835" alt="image" src="https://github.com/user-attachments/assets/abb3c97e-7447-467e-96dc-7cdeebc54684" />
-The system implements an end-to-end real-time IoT light monitoring pipeline. The LM393 light sensor detects lobby light levels and outputs binary readings (0 or 1), which are read and timestamped every minute by the ESP32 microcontroller. The ESP32 publishes these readings securely to AWS IoT Core via MQTT, which then forwards the data to MongoDB Atlas for storage. Each record includes the light value, unit, and timestamp. Python, Dash, and MongoDB Atlas Charts retrieve the stored data to perform aggregation, analysis, and generate visualizations, enabling real-time monitoring and historical trend analysis.
+The system implements an end-to-end real-time IoT light monitoring pipeline. The LM393 light sensor detects lobby light levels and outputs binary readings (0 or 1), which are read and timestamped every minute by the ESP32 microcontroller. The ESP32 publishes these readings securely to AWS IoT Core via MQTT, which then forwards the data to MongoDB Atlas for storage. Each record includes the light value, unit, and timestamp. Python, Dash, and MongoDB Atlas Charts retrieve the stored data to perform aggregation and generate visualizations, enabling real-time monitoring and historical trend analysis.
 
 ## Hardware Setup
 
@@ -54,7 +54,7 @@ Features:
 
 This dashboard provides a simple, live view of incoming IoT data.
 
-### 2️. Data Analysis & Aggregation (Python – Jupyter Notebook)
+### 2️. Data Aggregation & Visualization (Python – Jupyter Notebook)
 
 Exploratory data analysis and aggregation were performed using Python in a Jupyter Notebook.
 
@@ -86,7 +86,7 @@ Atlas Charts enables fast exploratory analysis.
 - Programming & Analysis: Python, Pandas, PyMongo
 - Visualization:
   Dash & Plotly (real-time monitoring)
-  Jupyter Notebook (data analysis & aggregation)
+  Jupyter Notebook (Data Aggregation & Visualization)
   MongoDB Atlas Charts (cloud-based real-time visualization)
 
 <img width="1108" height="548" alt="atlas charts" src="https://github.com/user-attachments/assets/39e911b4-38e8-4b8f-853f-f75e28964ae3" />
