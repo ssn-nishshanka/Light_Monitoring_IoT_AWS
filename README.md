@@ -50,28 +50,47 @@ The project includes three visualization layers:
 A lightweight Dash application was built to visualize real-time light sensor readings published from the ESP32.
 
 Features:
-
-Time-series visualization of binary light readings (0/1)
-
-Real-time monitoring of light presence over time
+- Time-series visualization of binary light readings (0/1)
+- Real-time monitoring of light presence over time
 
 This dashboard provides a simple, live view of incoming IoT data.
 
+### 2️. Data Analysis & Aggregation (Python – Jupyter Notebook)
+
+Exploratory data analysis and aggregation were performed using Python in a Jupyter Notebook.
+
+Analysis performed:
+- Count of light presence vs absence (column chart)
+- Average light exposure per hour (line chart)
+- Average light exposure per 30-minute interval (line chart)
+- Identification of peak light exposure times (column chart)
+- Analysis of continuous light presence and absence patterns (area chart)
+
+This analysis supports understanding temporal lighting behavior and usage patterns.
+
+### 3️. Cloud-Based Visualization (MongoDB Atlas Charts)
+
+MongoDB Atlas Charts was used for cloud-level monitoring of IoT data stored in MongoDB Atlas.
+
+Features:
+- Real-time visualization directly on database collections
+- Time-series and aggregation-based charts
+- Secure, shareable real-time visualizations hosted in the cloud
+
+Atlas Charts enables fast exploratory analysis, while Python-based analysis allows deeper insights.
+
 ## Technologies Used
 
-Hardware: ESP32, LM393 light sensor, breadboard, jumper wires
+- Hardware: ESP32, LM393 light sensor, breadboard, jumper wires
+- Cloud: AWS IoT Core
+- Database: MongoDB Atlas
+- Programming & Analysis: Python, Pandas, PyMongo
+- Visualization:
+  Dash & Plotly (real-time monitoring)
+  Jupyter Notebook (data analysis & aggregation)
+  MongoDB Atlas Charts (cloud-based real-time visualization)
 
-Cloud: AWS IoT Core
-
-Database: MongoDB Atlas
-
-Programming & Analysis: Python, Pandas, PyMongo
-
-Visualization:
-
-MongoDB Atlas Charts (cloud-level monitoring)
-
-Dash & Plotly (custom interactive dashboards)
+<img width="1108" height="548" alt="atlas charts" src="https://github.com/user-attachments/assets/39e911b4-38e8-4b8f-853f-f75e28964ae3" />
 
 ## Setup & Running Instructions
 
