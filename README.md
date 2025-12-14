@@ -85,8 +85,11 @@ Atlas Charts enables fast exploratory analysis.
 - Database: MongoDB Atlas
 - Programming & Analysis: Python, Pandas, PyMongo
 - Visualization:
+  
   Dash & Plotly (real-time monitoring)
+  
   Jupyter Notebook (Data Analysis & Visualization)
+  
   MongoDB Atlas Charts (cloud-based real-time visualization)
 
 <img width="1108" height="548" alt="atlas charts" src="https://github.com/user-attachments/assets/39e911b4-38e8-4b8f-853f-f75e28964ae3" />
