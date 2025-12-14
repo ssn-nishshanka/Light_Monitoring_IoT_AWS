@@ -43,31 +43,20 @@ The LM393 sensor provides a binary output based on the comparison between ambien
 
 ## Data Analysis & Visualization
 
-Aggregated and processed IoT light sensor data is retrieved from MongoDB Atlas using Python scripts.
-The system supports two visualization layers:
+The project includes three visualization layers:
 
-## Cloud-Based Visualization (MongoDB Atlas Charts)
+### 1. Application-Level Visualization (Dash & Plotly)
 
-MongoDB Atlas Charts is used for direct cloud-based visualization of stored IoT data without additional processing.
+A lightweight Dash application was built to visualize real-time light sensor readings published from the ESP32.
 
 Features:
 
-Real-time monitoring directly on MongoDB collections
+Time-series visualization of binary light readings (0/1)
 
-Time-series and aggregation-based charts
+Real-time monitoring of light presence over time
 
-Secure, shareable dashboards hosted in the cloud
+This dashboard provides a simple, live view of incoming IoT data.
 
-This layer enables fast exploratory analysis, while the Dash dashboard provides customized and advanced analytics.
-
-Application-Level Visualization (Dash & Plotly):
-- Real-time light exposure monitoring
-- Trend analysis over configurable time intervals
-- Binary time-series representation of light intensity
-- Interactive filtering and time-range selection
-- Benefits:
-- Enables quick detection of unusual or inconsistent light patterns
-Supports data-driven decisions for building lighting management
 ## Technologies Used
 
 Hardware: ESP32, LM393 light sensor, breadboard, jumper wires
